@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Landing Page</title>
+    <link rel="stylesheet" href="LANDING PAGE CSS.css">
+  
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-content">
+            <img src="Screenshot 2024-11-15 at 09.54.38.png" alt="Logo">
+            <ul>
+                <li><a href="Landing Page.html">HOME</a></li>
+                <li><a href="Products.html">PRODUCTS</a></li>
+           
+                <li><a href="FORM LANDING.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section header -->
+     
+    <header class="hero">
+       
+        <br>
+        <h1>The Badminton Hub</h1>
+        <p>High quality badminton equipment at an affordable price!</p>
+    </header>
+
+
+
+
+
+ 
+
+
+    <!-- Image carousel -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="badmin shoes.avif">
+            <div class="text">High Quality Shoes</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="aracket.webp">
+            <div class="text">High Quality Rackets</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="badmin bag.jpeg">
+            <div class="text">High Quality Bags</div>
+        </div>
+        
+
+
+
+
+        <!-- button next dan previous -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+
+
+
+ 
+
+
+    <!--Javascript untuk carousel-->
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+      
+        
+    </script>
+
+    <br>
+     <!-- about us Section -->
+ <section class="about-us">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Selamat datang di Badminton Hub! Kami sangat menggemari bulu tangkis dan berdedikasi untuk menyediakan produk berkualitas tinggi yang meningkatkan permainan setiap pemain, dari pemula hingga profesional.
+            Website ini bertujuan sebagai toko online untuk membeli produk yaitu peralatan bulu tangkis.
+        </p>
+        <hr>
+        <h2>Our Story</h2>
+        <p>Didirikan oleh sekelompok penggemar bulu tangkis, misi kami adalah menghadirkan peralatan bulu tangkis terbaik bagi para pemain di seluruh dunia. Dari raket yang dibuat dengan cermat hingga kok dan perlengkapan bermutu premium, kami berfokus pada kualitas, inovasi, dan performa.</p>
+        <hr>
+        <h2>Mengapa Memilih Kami?</h2>
+        <ul>
+            <li>Kami menawarkan berbagai macam Yonex dan produk bulu tangkis berkualitas tinggi lainnya.</li>
+            <li>Tim kami berpengetahuan luas dan siap membantu Anda memilih perlengkapan yang tepat.</li>
+            <li>Kepuasan pelanggan adalah prioritas utama kami, dan kami menyediakan layanan yang cepat dan dapat diandalkan.</li>
+            <br>
+        </ul>
+        <hr>
+        <h2>Bergabunglah Dengan Komunitas Kami!</h2>
+        <p>Kami percaya akan pentingnya membangun komunitas pemain yang mencintai permainan ini seperti kami. Ikuti kami di media sosial, hadiri acara kami, dan bergabunglah dengan kami dalam mempromosikan bulu tangkis secara global!</p>
+    <hr>
+</div>
+</section>
+<br><br><br><br>
+
+
+
+
+
+
+
+
+
+<div class="main">
+  <div class="container">
+    <h2> Highlighted Products</h2>
+    <hr>
+  <div class="row">
+    <div class="column">
+        <div class="content">
+            <img src="Racket yonex 5.webp" alt="NANOFLARE 800">
+            <h3>NANOFLARE 800</h3>
+            <p>Rp 2.500.000,00</p>
+        </div>
+    </div>
+      <div class="column">
+          <div class="content">
+              <img src="Racket yonex 2.webp">
+              <h3>ARCSABER 2 FEEL</h3>
+              <p>Rp 640.000,00</p>
+          </div>
+      </div>
+      <div class="column">
+          <div class="content">
+              <img src="Racket yonex 3.webp">
+              <h3>ASTROX 88 S TOUR</h3>
+              <p>Rp 2.099.000,00</p>
+          </div>
+      </div>
+      <div class="column">
+          <div class="content">
+              <img src="Racket yonex 4.webp">
+              <h3>NANOFLARE NEXTAGE</h3>
+              <p>Rp 1.349.000,00</p>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<br>
+<br><br>
+<div class="container">
+    <a href="Products.html" class="shop-button">Shop Now!</a>
+</div>
+
+
+<br>
+<br>
+
+
+<!-- GALLERY ATHLETES -->
+<h2>Para Atlit</h2>
+<hr>
+<div class="gallery-container">
+    
+    <div class="gallery">
+        <a target="_blank">
+            <img src="https://www.yonex.com/media/athletes/tmp/square/hogi_square.jpg" alt="Takuro Hoki">
+        </a>
+        <div class="desc">Takuro Hoki, Japan</div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank">
+            <img src="https://www.yonex.com/media/athletes/tmp/square/KUNLAVUT_VITIDSARN_square_1.jpg" alt="Kunlavut Vididsarn">
+        </a>
+        <div class="desc">Kunlavut Vididsarn, Thailand</div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank">
+            <img src="https://www.yonex.com/media/athletes/tmp/square/AaronChia_squarel.jpg" alt="Aaron Chia">
+        </a>
+        <div class="desc">Aaron Chia, Malaysia</div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank">
+            <img src="https://www.yonex.com/media/athletes/tmp/square/CarolinaMarin_square.jpg" alt="Carolina Marin">
+        </a>
+        <div class="desc">Carolina Marin, Spain</div>
+    </div>
+</div>
+
+<br>
+<!--Review-->
+
+<section class="hero review-section">
+    <p>"Menurut saya Yonex saat ini merupakan merek raket bulu tangkis terbaik. Lihat saja di dunia bulu tangkis profesional; sebagian besar pemain terkenal menggunakan raket Yonex. Misalnya, pemain tunggal putra papan atas seperti Lee Chong Wei, Viktor Axelsen, Lin Dan, Jan O Jorgensen." -
+        Jack Chen</p>
+    </section>
+<br><br><br>
+
+
+<br><br><br>
+
+<footer>
+    <marquee>&copy; 2024 Brayden Nicholas Kwenandar. All rights reserved. Contact me: 08127201648</marquee>
+</footer>
+
+</body>
+</html>

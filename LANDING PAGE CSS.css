@@ -1,0 +1,583 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+
+
+
+        body {
+            background-image: url('istock-858272962.jpg');
+          }
+
+
+
+        /* Navbar */
+nav {
+    background-color: #2C3E50;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers content vertically */
+}
+
+nav .nav-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and navigation items */
+}
+
+nav img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ECF0F1;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #34495E;
+}
+
+
+
+
+
+
+
+
+        /* Header section dengan text */
+        .hero {
+            background: linear-gradient(to right, rgba(44, 62, 80, 0.8), rgba(52, 152, 219, 0.8)), url('hero-image.jpg') center/cover no-repeat;
+            padding: 120px 20px;
+            text-align: center;
+            color: #ECF0F1;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Carousel container */
+        .slideshow-container {
+            background-color: #ffffff; 
+
+            min-width: 100vw;
+            position: relative;
+            margin: 40px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Hanya 1 gambar ditampil */
+        .mySlides {
+            display: none;
+        }
+
+        /* style image agar dapat kelihatan dengan jelas (80% view height sehingga image dapat dilihat dan tdk usah scroll ke bawah) */
+        .mySlides img {
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+        }
+
+        /* text untuk carousel (caption)*/
+        .text {
+            color: #ECF0F1;
+            font-size: 1em;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        /* Button previous next di carousel */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: #ECF0F1;
+            font-weight: bold;
+            font-size: 24px;
+            border-radius: 0 5px 5px 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            user-select: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+       
+
+        /* Animasi fade (carousel) */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        /* Animasi fade (carousel) */
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+
+
+
+ 
+         /* hanya 1 image yang dapat dilihat*/
+        .mySlides {
+            display: none;
+            text-align: center; /* caption di carousel center align */
+        }
+
+          /* Image styling dalam slides/carousel */
+      .mySlides img {
+            display: block;        /* Center image block */
+           margin: auto;          /* Center image secara horizontal */
+            max-width: 100vh;       /* mengatur besar image agar muat di slideshow */
+            max-height: 80vh;      /* height max adalah 80% dari viewport height (tidak usah scroll ke bawah) */
+            width: auto;
+            height: auto;
+        }
+
+
+
+
+
+
+
+
+
+        section{     background-color: #f0f4f8; 
+        }
+       
+        section img {
+            border-radius: 50%;
+            max-width: 150px;
+            max-height: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        section h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #293961;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content img {
+            max-width: 200px;
+            max-height: 150px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+                }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 8px -16px;
+        }
+
+        .column .content {
+    background-color: white;
+    padding: 10px;
+    text-align: center; /* Centers text inside the .content container */
+}
+
+.column .content h3 {
+    margin-top: 10px; /* Adds some space above the title */
+}
+
+.column .content p {
+    margin-top: 5px; /* Adds some space above the price */
+}
+
+        .column {
+            flex: 1;
+            max-width: 25%;
+            padding: 8px;
+        }
+
+        .column .content {
+            background-color: white;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* shadow */
+    border-radius: 10px; 
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .content2 {
+            
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+/* styling paragraph*/
+        .content2 p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+/* sstyling image*/
+        .content2 img {
+            max-width: 200px;
+            max-height: 150px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+                }
+
+        /* Hover effect */
+    .column .content:hover {
+    transform: translateY(-10px); /* hover effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* shadow dibawah hover effect */
+}
+
+        @media screen and (max-width: 900px) {
+            .column {
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                max-width: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling footer */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: 40px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+        text-align: center; /* Center content within the slide */
+    }
+
+    /* Image styling within slides */
+    .mySlides img {
+        display: block;        /* Centers the image block */
+        margin: auto;          /* Centers the image horizontally */
+        max-width: 100%;       /* Scales image to fit container width */
+        max-height: 80vh;      /* Sets max height to 80% of viewport height */
+        width: auto;
+        height: auto;
+        border-radius: 10px;   /* Rounds corners */
+        
+    }
+
+
+
+    .main .container {
+    max-width: 3000px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Adds padding on the left and right */
+    background-color: white; 
+    border-radius: 15px;
+    padding-left: 30px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between columns */
+}
+
+
+
+
+/* highlighted product */
+h2 {
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 30px;
+            margin-top: 20px;
+            font-size: 2.5em;
+            background-color: white; 
+
+        }
+   
+
+
+
+
+
+        /*ATHLETES*/
+
+    /* styling gallery athletes*/
+    /* untuk center gallery */
+    .gallery-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+        background-color: white; 
+        padding-bottom: 50px;
+        
+    }
+
+    div.gallery {
+        margin: 10px;
+        border: 1px solid #ccc;
+        width: 180px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 5px;
+        overflow: hidden;
+        
+    }
+
+    div.gallery:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+       
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+    }
+
+    div.desc {
+        padding: 15px;
+    
+    }
+
+
+
+
+
+
+
+
+    /* Review section*/
+
+.review-section {
+    background-color: white; 
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center;
+    margin: 40px 0; 
+    border-radius: 10px; /* corner bulat */
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* shadow */
+}
+/* stlying paragraph */
+.review-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-style: italic; 
+    color: #1f2c38; 
+    margin-bottom: 0; 
+}
+
+.review-section::before {
+    content: "Customer Review";
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #182c3a;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* About Us Section */
+.about-us {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+    color: #2C3E50;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #34495E;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #293961;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.about-us ul li {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.container {
+    text-align: center;
+}
+
+.shop-button {
+    display: inline-block;
+    padding: 30px 70px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #5680bf;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-button:hover {
+    background-color: #395182;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
